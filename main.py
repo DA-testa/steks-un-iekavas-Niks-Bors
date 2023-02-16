@@ -34,7 +34,7 @@ def find_mismatch(text):
 def main():
     text = input()
     if "I" in text:
-        text = input()
+        text = inputs()
     inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i);",]
     for input in inputs:
          mismatch = find_mismatch(input)
