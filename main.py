@@ -54,7 +54,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text =="F"
+    if text =="F":
     fileName = input()
     file = open(fileName,"r")
     print(find_mismatch2(file))
