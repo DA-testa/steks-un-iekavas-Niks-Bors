@@ -32,7 +32,7 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
+    text = inputs()
     if "I" in text:
         text = inputs()
     inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i);",]
