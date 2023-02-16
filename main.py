@@ -53,8 +53,8 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
-    if text =="F":
+    type = input()
+    if type =="F":
     fileName = input()
     file = open(fileName,"r")
     print(find_mismatch2(file))
