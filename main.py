@@ -32,13 +32,11 @@ def find_mismatch(text):
 
 
 def main():
-    text = inputs()
-    if "I" in text:
-        text = inputs()
-    inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i);",]
-    for input in inputs:
-         mismatch = find_mismatch(input)
-         print("%-11s %s" %(input,mismatch))
+    #text = inputs()
+    #if "I" in text:
+    if type =="I"
+        text = input()
+    print(find_mismatch(text))
         
     # Printing answer, write your code here
 
