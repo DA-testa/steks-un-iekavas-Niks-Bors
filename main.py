@@ -28,20 +28,9 @@ def find_mismatch(text):
             return "Success"
     return 1
 
-
-    
-            
-    
-            
-
-
 def main():
     type = input()
-    if type =='F':
-        fileName = input()
-        file = open(fileName, "r")
-        print(find_mismatch(file))
-    elif type =='I':
+    if type =='I':
         text = input()
         print(find_mismatch(text))
         
