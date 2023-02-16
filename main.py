@@ -31,8 +31,8 @@ def find_mismatch(text):
 def main():
     type = input()
     if type =='I':
-        text = input()
-        print(find_mismatch(text))
+        type = input()
+        print(find_mismatch(type))
         
     # Printing answer, write your code here
 
