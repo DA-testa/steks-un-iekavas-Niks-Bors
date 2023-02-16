@@ -41,7 +41,7 @@ def main():
         fileName = input()
         file = open(fileName, "r")
         print(find_mismatch(file))
-    if type =='I':
+    elif type =='I':
         text = input()
         print(find_mismatch(text))
         
