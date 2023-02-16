@@ -55,11 +55,11 @@ def find_mismatch2(text):
 
 def main():
     type = input()
-    if type =='F':
+if type =='F':
     fileName = input()
     file = open(fileName,"r")
     print(find_mismatch2(file))
-    elif type =='I':
+elif type =='I':
         text = input()
         print(find_mismatch2(text))
         
