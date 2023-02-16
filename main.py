@@ -27,7 +27,7 @@ def find_mismatch(text):
 
                 return "Success"
     return 1
-    def find_mismatch2(text):
+def find_mismatch2(text):
     opening_brackets_stack = []
     for i, next in enumerate(text):
         if next in "([{":
