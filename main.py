@@ -22,11 +22,10 @@ def find_mismatch(text):
         if next in ")]}":
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
              return i+1
-
-        opening_brackets_stack.pop()
-        if not opening_brackets_stack:
-            return "Success"
-return 1
+            opening_brackets_stack.pop()
+            if not opening_brackets_stack:
+                return "Success"
+    return 1
             
     
             
@@ -34,11 +33,10 @@ return 1
 
 def main():
     #if I h
-        inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i]);",]
-        for input in inputs:
-            
-            mismatch = find_mismatch(text)
-            print("%-11s %s" %(input,mismatch))
+    inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i);",]
+    for input in inputs:
+         mismatch = find_mismatch(input)
+         print("%-11s %s" %(input,mismatch))
         
     # Printing answer, write your code here
 
