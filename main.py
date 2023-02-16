@@ -24,7 +24,7 @@ def find_mismatch1(text):
              return i+1
             opening_brackets_stack.pop()
 
-        if i == len(text)-1 and len(opening_brackets_stack)==0:
+        if i == len(text) - 1 and len(opening_brackets_stack) == 0:
             return "Success"
     return 1
 
@@ -55,11 +55,11 @@ def find_mismatch2(text):
 
 def main():
     type = input()
-    #if type =='F':
-        #fileName = input()
-        #file = open(fileName, "r")
-        #print(find_mismatch2(file))
-    if type =='I':
+    if type =='F':
+        fileName = input()
+        file = open(fileName, "r")
+        print(find_mismatch2(file))
+    elif type =='I':
         text = input()
         print(find_mismatch2(text))
         
