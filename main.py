@@ -39,7 +39,7 @@ def main():
         for input in inputs:
             
             mismatch = find_mismatch(text)
-            print(mismatch)
+            print("%-11s %s" %(input,mismatch))
         
     # Printing answer, write your code here
 
