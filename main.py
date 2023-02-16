@@ -32,7 +32,9 @@ def find_mismatch(text):
 
 
 def main():
-    #if I h
+    tex = input()
+    if "I" in text:
+        text = input()
     inputs =["[]","{}[]","[{}]","{","{[}","foo(bar[i);",]
     for input in inputs:
          mismatch = find_mismatch(input)
