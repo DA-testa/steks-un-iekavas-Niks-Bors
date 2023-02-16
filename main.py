@@ -29,10 +29,10 @@ def find_mismatch(text):
     return 1
 
 def main():
-    type = input()
-    if type =='I':
-        type = input()
-        print(find_mismatch(type))
+    text = input()
+    if "I" in text:
+        
+        print(find_mismatch(text))
         
     # Printing answer, write your code here
 
