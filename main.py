@@ -31,8 +31,12 @@ def find_mismatch(text):
 def main():
     text = input()
     if "I" in text:
+    
+        text = input()
+        ms = find_mismatch(text)
         
-        print(find_mismatch(text))
+        
+        print(find_mismatch(ms))
         
     # Printing answer, write your code here
 
