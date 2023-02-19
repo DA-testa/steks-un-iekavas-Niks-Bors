@@ -33,10 +33,10 @@ def main():
     if "I" in text:
     
         text = input()
-        ms = find_mismatch(text)
+        mismatch = find_mismatch(text)
         
         
-        print(find_mismatch(ms))
+        print(find_mismatch(mismatch))
         
     # Printing answer, write your code here
 
