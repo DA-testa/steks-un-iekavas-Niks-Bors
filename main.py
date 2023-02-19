@@ -25,11 +25,11 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
             
             
-            if opening_brackets_stack:
-                return opening_brackets_stack[0].position
+        if opening_brackets_stack:
+            return opening_brackets_stack[0].position
 
         #if i == len(text)-1 and len(opening_brackets_stack)==0:
-            return "Success"
+        return "Success"
     #return 1
 
 def main():
