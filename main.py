@@ -23,8 +23,12 @@ def find_mismatch(text):
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
              return i+1
             opening_brackets_stack.pop()
+            
+            
+            if opening_brackets_stack:
+                return opening_brackets_stack[0].position
 
-        if i == len(text)-1 and len(opening_brackets_stack)==0:
+        #if i == len(text)-1 and len(opening_brackets_stack)==0:
             return "Success"
     #return 1
 
