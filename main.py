@@ -22,25 +22,25 @@ def find_mismatch(text):
         if next in ")]}":
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
              return i+1
+
             opening_brackets_stack.pop()
             
             
         if opening_brackets_stack:
             return opening_brackets_stack[0].position
-
-        #if i == len(text)-1 and len(opening_brackets_stack)==0:
         return "Success"
+        #if i == len(text)-1 and len(opening_brackets_stack)==0:
+        
     #return 1
 
 def main():
+
     text = input()
     if "I" in text:
     
         text = input()
         mismatch = find_mismatch(text)
-        
-        
-        print(find_mismatch(mismatch))
+        return(find_mismatch(mismatch))
         
     # Printing answer, write your code here
 
