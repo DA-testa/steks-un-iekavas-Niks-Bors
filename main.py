@@ -35,9 +35,13 @@ def find_mismatch(text):
     
 
 def main():
-
     text = input()
-    if "I" in text:
+    if "F" in text:
+        fileName = input()
+        file = open(fileName, "r")
+        print(file)
+    
+    elif "I" in text:
         text = input()
         ms = find_mismatch(text)
         print(ms)
