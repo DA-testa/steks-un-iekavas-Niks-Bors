@@ -40,7 +40,7 @@ def main():
     
         text = input()
         mismatch = find_mismatch(text)
-        return(find_mismatch(mismatch))
+        print(find_mismatch(mismatch))
         
     # Printing answer, write your code here
 
